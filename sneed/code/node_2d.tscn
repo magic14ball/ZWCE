@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://rljcsm43pfsw"]
+
+[ext_resource type="Texture2D" uid="uid://bpeu1g81nqjml" path="res://SNEED/playere/frame0001.png" id="1_dx0ac"]
+[ext_resource type="Script" path="res://code/Player.cs" id="2_2vnlj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lffd3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dx0ac")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lffd3")
+script = ExtResource("2_2vnlj")
